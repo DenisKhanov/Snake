@@ -1,4 +1,4 @@
-module Snake
+module github.com/DenisKhanov/Snake
 
 go 1.22
 
