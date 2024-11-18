@@ -1,6 +1,6 @@
 package main
 
-import "Snake/modules"
+import "github.com/DenisKhanov/Snake/modules"
 
 func main() {
 	snake := modules.NewSnake()
