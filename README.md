@@ -46,7 +46,7 @@ Before you begin, ensure you have the following dependencies installed:
 ## Download the executable file
 
 ### Run on Linux (ubuntu/debian)
-1. You can download [`SnakeGO`](https://github.com/DenisKhanov/Snake/SnakeGO)file for Linux.
+1. You can download [`SnakeGO`](https://github.com/DenisKhanov/Snake/blob/master/SnakeGO)file for Linux.
 2. You need install SDL2 library
     ```bash
     sudo apt install libsdl2-dev
@@ -59,8 +59,8 @@ Before you begin, ensure you have the following dependencies installed:
 
 ### Run on Windows
 
-1. You need download [`SnakeGO.exe`](https://github.com/DenisKhanov/Snake/SnakeGO.exe) file for Windows.
-2. [`SDL2.dll`](https://github.com/DenisKhanov/Snake/cmd/SDL2.dll) and [`libmcfgthread-1.dll`](https://github.com/DenisKhanov/Snake/cmd/libmcfgthread-1.dll) files should be created automatically when...
+1. You need download [`SnakeGO.exe`](https://github.com/DenisKhanov/Snake/blob/master/SnakeGO.exe) file for Windows.
+2. [`SDL2.dll`](https://github.com/DenisKhanov/Snake/blob/master/cmd/SDL2.dll) and [`libmcfgthread-1.dll`](https://github.com/DenisKhanov/Snake/blob/master/cmd/libmcfgthread-1.dll) files should be created automatically when...
    files should be created automatically when running on windows.
 3. If this did not happen, then you can download these files by clicking on them and place them in the directory next to the executable file.
 
