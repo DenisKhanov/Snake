@@ -1,14 +1,18 @@
-# Snake Game in Go
+![Snake logo](https://github.com/github.com/DenisKhanov/Snake/game/assets/SnakeGO.png)
+
+
+# Snake Game in Go V1.0
 
 Welcome to the Snake Game written in Go! This repository contains the implementation of a classic Snake game using the Go programming language and SDL2 for graphics rendering. The game features a snake that grows as it eats food, avoids obstacles, and plays with simple controls.
+
+![GIF](https://github.com/github.com/DenisKhanov/Snake/game/assets/snake.gif)
 
 ## Features
 
 - **Classic Snake Gameplay**: Control the snake with the arrow keys to eat food and grow longer.
 - **Game Instructions**: Easy-to-read game instructions displayed on the screen.
-- **Responsive Design**: Resizes the game window based on system capabilities.
 - **High Scores**: Tracks your score and displays it in real-time.
-- **Game Over Mechanism**: The game ends when the snake collides with itself or the walls.
+- **Game Over Mechanism**: The game ends when the snake collides with the walls.
 - **Graphics**: Custom fonts and colorful visuals to enhance the user experience.
 
 ## Prerequisites
@@ -38,13 +42,35 @@ Before you begin, ensure you have the following dependencies installed:
     go run main.go
     ```
 
+## Download the executable file
+
+### Run on Linux (ubuntu/debian)
+1. You can download [`SnakeGO`](https://github.com/github.com/DenisKhanov/Snake/SnakeGO)file for Linux.
+2. You need install SDL2 library
+    ```bash
+    sudo apt install libsdl2-dev
+    ```
+   and install OpenGL
+    ```bash
+    sudo apt install mesa-common-dev libgl1-mesa-dev
+    ```
+3. You can run `SnakeGO`
+
+### Run on Windows
+
+1. You need download [`SnakeGO.exe`](https://github.com/github.com/DenisKhanov/Snake/SnakeGO.exe) file for Windows.
+2. [`SDL2.dll`](https://github.com/github.com/DenisKhanov/Snake/cmd/SDL2.dll) and [`libmcfgthread-1.dll`](https://github.com/github.com/DenisKhanov/Snake/cmd/libmcfgthread-1.dll) files should be created automatically when...
+   files should be created automatically when running on windows.
+3. If this did not happen, then you can download these files by clicking on them and place them in the directory next to the executable file.
+
+
 ## How to Play
 
-- Use the **arrow keys** to control the direction of the snake.
+- Use the **arrow keys ← ↑ → ↓** to control the direction of the snake.
 - **Eat food** to grow the snake.
-- The game ends if the snake collides with its own body or the boundaries of the game area.
+- The game ends if the snake collides with the boundaries of the game area.
 - Track your **score** and how many food items you've eaten on the right side of the screen.
-- **Restart the game** after it ends by pressing any key.
+- **Restart the game** after it ends by pressing **ENTER** key.
 
 ## Key Functions and Features
 
@@ -67,6 +93,7 @@ type Game struct {
     ateFood    int
     gameOver   bool
     needMove   bool
+    needUpdateInfo bool
 }
 ```
 
@@ -127,7 +154,7 @@ func (d Dir) CheckParallel(newDir Dir) bool {
 ```
 
 ### Fonts and Rendering
-Custom fonts are loaded for the game interface:
+Custom fonts are loaded for the game interface from ./game/assets:
 ```go
 func (g *Game) initFonts() {
     mainFont, err := g.cv.LoadFont(samuraiFont)
@@ -167,10 +194,7 @@ type GameParam struct {
 
 Feel free to fork this repository, open an issue, or create a pull request to contribute to this project. If you have any suggestions or improvements, I’d love to hear from you!
 
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Enjoy playing the Snake game! 😄
+Enjoy playing the Snake game! 🐍😄
