@@ -1,11 +1,11 @@
-![Snake logo](https://github.com/github.com/DenisKhanov/Snake/game/assets/SnakeGO.png)
+![Snake logo](https://github.com/DenisKhanov/Snake/blob/master/game/assets/SnakeGO.png)
 
 
 # Snake Game in Go V1.0
 
 Welcome to the Snake Game written in Go! This repository contains the implementation of a classic Snake game using the Go programming language and SDL2 for graphics rendering. The game features a snake that grows as it eats food, avoids obstacles, and plays with simple controls.
 
-![GIF](https://github.com/github.com/DenisKhanov/Snake/game/assets/snake.gif)
+![GIF](https://github.com/DenisKhanov/Snake/blob/master/game/assets/snake.gif)
 
 ## Features
 
