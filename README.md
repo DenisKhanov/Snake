@@ -1,4 +1,5 @@
-![Snake logo](https://github.com/DenisKhanov/Snake/blob/master/game/assets/SnakeGO.png)
+<img src="https://github.com/DenisKhanov/Snake/blob/master/game/assets/SnakeGO.png" alt="Snake logo" width="100" height="100">
+
 
 
 # Snake Game in Go V1.0
